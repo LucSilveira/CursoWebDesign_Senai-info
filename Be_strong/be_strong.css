@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* comeco edição dos banners */
+
+    /* imagem principal */
+    #img-concentrado img{
+        width: 42%;
+        position: absolute;
+        top: 100px;
+        left: 45%;
+        z-index: -1;
+    }
+    /* fim imagem principal */
+
+    /* titulo principal */
+
+    .titulo{
+        font-size: 82px;
+        width: 44%;
+        text-transform: capitalize;
+        line-height: 132px;
+        position: relative;
+        left: 17%;
+        top: 100px;
+    }
+    /* fim titulo principal */
+
+/* blocos secundarios */
+
+.imagens{
+    width: 42%;
+    position: relative;
+    left: 45%;
+    height: 375px;
+}
+
+.imagens #logo{
+    background-color: rgba(185, 9, 9, 0.5);
+    width: 390px;
+    height: 192px;
+    position: absolute;
+    top: 47.3%;
+}
+
+.imagens p{
+    margin-left: 73px;
+    margin-top: 11%;
+    color: white;
+    font-size: 39px;
+    width: 67%;
+    float: left;
+}
+
+.imagens p span{
+    font-size: 50%;
+}
+
+.imagens #logo img{
+    width: 65%;
+    margin-left: 75px;
+    margin-top: -35px;
+}
+
+.imagens #frase{
+    color: white;
+    background-color: red;
+    width: 48.8%;
+    position: absolute;
+    height: 49%;
+    top: 98.5%;
+}
+
+#textura{
+    width: 21.5%;
+    position: absolute;
+    left: 72%;
+    top: 177px;
+}
+
+#textura img{
+    width: 259%;
+}
+/* fim dos blocos secundarios */
+
+/* texto descritivo */
+.divisoria{
+    position: absolute;
+    top: 47%;
+    height: 4px;
+    background-color: red;
+    width: 18%;
+    left: 17%;
+    border: none;
+}
+
+.text-descritivo p{
+    width: 16%;
+    position: relative;
+    left: 17%;
+    margin-top: -7%;
+    font-size: 130%;
+    line-height: 34px;
+} 
+/* fim do texto descritivo */
+
+/* comeco barras finais */
+.retangulo{
+    position: absolute;
+    left: 17%;
+    margin-top: 58px;
+}
+
+.retangulo p{
+    color: red;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+/* fim barras finais */
