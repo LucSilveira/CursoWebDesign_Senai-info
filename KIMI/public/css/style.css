@@ -1,0 +1,1025 @@
+/* IMPORT FONT */
+    @font-face{
+        font-family: 'Futura';
+        src: url('../fonts/Futura.ttc');
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+/* ======================== */
+
+
+/* CONTAINER CONFIGURATION */
+    .container{
+        margin: 0 auto;
+        background-color: white;
+        box-sizing: border-box;
+    }
+/* ======================== */
+
+
+/* DEFAULT CONFIGURATION */
+    body{ background-color: #333333; }
+
+    h1,h2,h3{
+        font-family: 'Futura-bold', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    
+    h1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        -webkit-background-clip: text; 
+        -moz-background-clip: text;
+        -o-background-clip: text;
+    
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color:transparent;
+        -o-text-fill-color:transparent;
+        -ms-text-fill-color:transparent;
+
+        background-image: url("../img/imagem_para_o_fundo_mobile.jpg");
+    }
+
+
+    hr{
+        margin-top: 10px;
+        border: 1px solid #B90302;
+    }
+
+    /* HEADER CONFIGURATION */
+        .cabecalho{
+            position: relative;
+            justify-content: center;
+        }
+
+        .titulo-cabecalho{ width: 100%; }
+
+        .menu-cabecalho{
+            width: 100%;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .menu-cabecalho img{ height: 100%; }
+
+        #menu-hamburger{ fill: #fff; }
+    /* ========================= */
+
+    /* MAIN CONFIGURATION */
+
+        /* cards flutuantes */
+            .next-race img, .next-race-photo, video{
+                width: 100%;
+            }
+
+            .next-race,
+            .next-race-photo,
+            .next-final{
+                position: relative;
+            }
+
+            .next-race-photo hr{
+                position: absolute;
+                top: 8vh;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(185, 2, 2, 0.842);
+                bottom: 0;
+                left: 0;
+                right: 0;
+                overflow: hidden;
+                transition: .5s ease;
+                box-sizing: border-box;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }  
+
+            .overlay hr{
+                position: absolute;
+                border-color: white;
+                width: 25%;
+                top: 15%;
+            }
+
+            .overlay footer{
+                height: 12vh;
+                font-size: 20px;
+                line-height: 32px;
+                padding: 17px;
+            }
+
+            .overlay footer strong{
+                font-size: 25px;
+            }
+
+            .overlay header{
+                justify-content: space-between;
+                padding: 17px;
+                font-size: 12px;
+            }
+
+            .overlay svg{
+                width: 50px;
+            }
+
+        /* fim dos cards flutuantes */
+
+        /* video principal */
+            .burn-to-race, .burn-final{
+                height: 100%;
+                position: relative;
+                background-color: #4D4D4D;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .burn-to-race video{
+                height: 200px;
+            }
+
+            .burn-final video{
+                height: 171px;
+            }
+
+            .burn-to-race hr{
+                position: absolute;
+                top: 56%;
+                border-color: white;
+                width: 89px;
+                left: 5%;
+            }
+
+            .burn-to-race h3, .burn-to-race p{
+                margin: 8% 5%;
+            }
+        /* fim do video principal */
+
+        /* TEXTO PRINCIPAL */
+            .the-finn .txt-finn hr{
+                border-color: #4D4D4D;
+                width: 15vh;
+                margin: 15px 0px;
+                position: absolute;
+            }
+
+            .txt-finn{
+                font-family: 'Open Sans', sans-serif;
+                padding: 5%;
+            }
+
+            .txt-finn p{
+                margin-top: 26px;
+            }
+
+            .raikkonen{
+                position: relative;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .raikkonen hr{
+                position: absolute;
+                top: 48vh;
+                width: 15vh;
+            }
+
+            tbody tr td:nth-child(odd){
+                text-align: right;
+                padding: 6px 15px;
+            }
+
+            tbody tr td:nth-child(even){
+                /* odd - linhas pares */
+                /* even - linhas impares */
+                /* ou numeros da tablea */
+                color: black;
+                font-weight: 800;
+            }
+
+            .kimi-raikkonen{
+                align-items: center;
+                flex-direction: row-reverse;
+                position: relative;
+                margin: 15px 8px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .kimi-raikkonen p{
+                font-weight: 800;
+                font-size: 12px;
+            }
+
+            .kimi-raikkonen hr{
+                width: 20vh;
+                position: absolute;
+                top: 5vh;
+                left: 46%;
+            }
+        /* FIM DO TEXTO PRINCIPAL */
+
+        /* RODAPE */
+            .iceman{
+                background-color: #B90302;
+                color: white;
+            }
+
+            .iceman p{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                margin: 0 auto;
+            }
+        /* FIM DO RODAPE */
+/* ======================== */
+
+/* MEDIA QUERIES */
+
+/* SMALL DEVICES FROM 0px TO 600px */
+@media only screen and (max-width: 600px){
+
+    /* CONTAINER CONFIGURATION */
+        .container{
+            width: 80%;
+            min-width: 300px;
+        }
+    /* ========================  */
+
+
+    /* HEADER CONFIGURATION */
+        .cabecalho{ 
+            height: 90vh; 
+        }
+
+        .titulo-cabecalho{
+            font-size: 35px;
+            margin-top: 20px;
+            order: 1;
+        }
+
+        .menu-cabecalho{
+            height: 40px;
+            padding: 5px 10px;
+        }
+
+        .menu-cabecalho img{ height: 100%; }
+
+        .img-cabecalho{
+            width: 100%;
+            height: 540px;
+        }
+
+        .img-cabecalho img{ width: 100%; }
+
+        hr{
+            width: 160px;
+            order: 2;
+            margin-top: 20px;
+        }
+    /* ========================  */
+
+    /* MAIN CONFIGURATION */
+
+        /* TEXTO PRINCIPAL */
+            .next-race-photo img{
+                width: 85%;
+                height: 100%;
+                z-index: 2;
+            }
+
+            .next-race-photo{margin: 30px 0}
+
+            .next-race-hr{
+                position: absolute;
+                right: 0;
+                top: 38%;
+                z-index: 1;
+            }
+
+            .the-finn .txt-finn{
+                position: relative;
+                background-repeat: no-repeat;
+        
+                background-size: cover;
+                background-position: center;
+                background-image: url("../img/fundo_carro_F1_PB_mobile.png");
+            }
+        /* FIM DO TEXTO PRINCIPAL */
+
+    /* ============================== */
+}
+
+
+
+/* SMALL DEVICES FROM 600px TO 768px */
+@media only screen and (min-width: 600px){
+
+    /* CONTAINER CONFIGURATION */
+        .container{ width: 95%; }
+    /* ======================== */
+
+    /* HEADER CONFIGURATION */
+        .cabecalho{ height: 90vh; }
+
+        .titulo-cabecalho{
+            font-size: 9vw;
+            line-height: 9vw;
+            order: 3;
+        }
+
+        .menu-cabecalho{
+            height: 50px;
+            padding: 5px 30px;
+        }
+
+        hr{
+            margin: 30px 0;
+            width: 50%;
+        }
+
+        .img-cabecalho img{
+            content: url('../img/kimi-raikkonen-wallpapers_desktop.jpg');
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+        }
+    /* ======================== */
+
+    /* MAIN CONFIGURATION */
+        .the-finn .txt-finn{
+            position: relative;
+            background-repeat: no-repeat;
+    
+            background-size: cover;
+            background-position: center;
+            background-image: url("./img/fundo_carro_F1_PB_mobile.png");
+        }
+    
+    /* ======================== */
+}
+
+
+
+/* MEDIUM DEVICES FROM 768px to 992px */
+@media only screen and (min-width: 768px){
+
+    /* HEADER CONFIGURATION */
+        .cabecalho{
+            height: 50vh;
+        }
+
+        .titulo-cabecalho{
+            order: -1;
+        }
+
+        .titulo-cabecalho h1{
+            font-size: 7vw;
+            line-height: 7vw;
+            -ms-transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            -ms-transform-origin: center center;
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+            margin-left: 30%;
+            background-image: url("../img/imagem_para_o_fundo_desktop.jpg");
+        }
+    
+        .menu-cabecalho{
+            height: 50px;
+        }
+
+        #menu-hamburger{
+            fill: #B90302;
+        }
+    
+        hr{
+            width: 45%;
+        }
+    /* ======================== */
+
+    /* MAIN CONFIGURATION */
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .overlay{
+            height: 0;
+        }
+    
+        .next-race:hover .overlay, 
+        .next-final:hover .overlay{
+            height: 100%;
+        }
+
+        /* CARDS FLUTUANTES */
+            .next-race, .next-race-photo{
+                position: absolute;
+                left: 55%;
+            }
+
+            .next-final{
+                position: absolute;
+                left: 12%;
+                top: 6%;
+            }
+
+            .next-race{
+                top: 32%;
+            }
+
+            .next-race-photo{
+                top: 46%;
+            }
+
+            .next-race img,
+            .next-race-photo img,
+            .next-final img,
+            .overlay{
+                height: 17vh;
+                width: 22vh;
+                z-index: 1;
+            }
+
+            .next-race-photo{
+                margin: 100px 0;
+            }
+
+            .next-race-photo hr{
+                position: absolute;
+                top: 3vh;
+                left: 0;
+                right: 0;
+                width: 170%;
+            }
+
+            .overlay-burn{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                bottom: 0;
+                left: 0;
+                right: 0;
+                overflow: hidden;
+                transition: .5s ease;
+            } 
+
+            .overlay hr{
+                position: absolute;
+                border-color: white;
+                width: 25%;
+                top: 9%;
+            }
+
+            .overlay footer{
+                height: 12vh;
+                font-size: 15px;
+                line-height: 32px;
+                padding: 13px;
+            }
+
+            .overlay footer strong{
+                font-size: 20px;
+            }
+
+            .overlay header{
+                justify-content: space-between;
+                padding: 13px;
+                padding-bottom: 0;
+                font-size: 12px;
+            }
+
+            .overlay svg{
+                width: 50px;
+            }
+        /* FIM DOS CARDS FLUTUANTES */
+
+        .burn-to-race video{
+            height: 36vh;
+        }
+
+        .burn-to-race hr{
+            position: absolute;
+            top: 55%;
+            border-color: white;
+            width: 89px;
+            left: 5%;
+        }
+
+        .burn-to-race h3, .burn-to-race p{
+            margin: 5%;
+            position: relative;
+            top: 48%;
+            width: 56%;
+            font-size: 13px;
+        }
+
+        .the-flying-finn{
+            background-image: url("../img/fundo_carro_F1_PB_desktop.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .the-flying-finn .txt-finn{
+            font-size: 11px;
+            width: 30vh;
+            margin-top: 4vh;
+            padding: 10%;
+            box-sizing: border-box;
+        }
+
+        .the-flying-finn table{
+            font-size: 11px;
+            margin-top: 7vh;
+            position: relative;
+            left: 10%;
+        
+        }
+
+        .raikkonen hr{
+            position: absolute;
+            top: 24vh;
+            width: 24vh;
+            left: 0;
+        }
+
+        .raikkonen img{
+            height: 34vh;
+        }
+
+        .the-flying-finn, .raikkonen{
+            flex-direction: row-reverse;
+            height: 36vh;
+        }
+
+        .column-final{
+            flex-direction: row-reverse;
+            position: relative;
+        }
+
+        .burn-final video{
+            height: 31vh;
+        }
+
+        .next-final{
+            left: 15%;
+            margin-top: 5%;
+            z-index: 1;
+        }
+
+        .kimi-raikkonen{
+            height: 15vh;
+            flex-direction: row;
+            padding: 3.5vh;
+            box-sizing: border-box;
+            margin: 3% 0;
+            position: relative;
+        }
+
+        .kimi-raikkonen img{
+            width: 15vh;
+        }
+
+        .kimi-raikkonen hr{
+            width: 23vh;
+            position: absolute;
+            top: 36%;
+            left: 68%;
+        }
+
+        .kimi-raikkonen p{
+            font-weight: 800;
+            font-size: 18px;
+            width: 38%;
+        }
+}
+
+
+/* LARGE DEVICES FORM 992px TO 1200px */
+@media only screen and (min-width: 992px){
+
+    /* HEADER CONFIGURATION */
+        .menu-cabecalho{
+            height: 60px;
+            padding: 5px 50px;
+        }
+
+        hr{ margin-top: 100px; }
+    /* ========================  */
+
+    /* MAIN CONFIGURATION */
+
+    .overlay{
+        height: 0;
+    }
+
+    .next-race:hover .overlay, 
+    .next-final:hover .overlay{
+        height: 100%;
+    }
+
+    /* CARDS FLUTUANTES */
+    .overlay hr{
+        position: absolute;
+        border-color: white;
+        width: 25%;
+        top: -15%;
+    }
+
+    .overlay footer{
+        height: 9vh;
+        font-size: 20px;
+        line-height: 35px;
+        padding: 23px;
+    }
+
+    .overlay footer strong{
+        font-size: 27px;
+    }
+
+    .overlay header{
+        justify-content: space-between;
+        padding: 22px;
+        padding-bottom: 0;
+        font-size: 16px;
+    }
+
+    .overlay svg{
+        width: 50px;
+    }
+/* FIM DOS CARDS FLUTUANTES */
+
+
+    .burn-to-race hr{
+        position: absolute;
+        top: 42%;
+        border-color: white;
+        width: 89px;
+        left: 5%;
+    }
+
+    .next-race-photo hr{
+        position: absolute;
+        top: -2vh;
+        left: 0;
+        right: 0;
+        width: 170%;
+    }
+
+    .the-flying-finn table{
+        font-size: 15px;
+        margin-top: 8vh;
+        position: relative;
+        left: 7%;
+    }
+
+    .the-flying-finn .txt-finn{
+        font-size: 18px;
+        width: 48vh;
+        margin-top: 4vh;
+        padding: 10%;
+        box-sizing: border-box;
+    }
+
+    .raikkonen hr{
+        position: absolute;
+        top: 20vh;
+        width: 24vh;
+        left: 0;
+    }
+
+    .kimi-raikkonen hr{
+        width: 23vh;
+        position: absolute;
+        top: 6%;
+        left: 67.6%;
+    }
+
+    .raikkonen img{
+        height: 34vh;
+    }
+    /* ========================  */
+
+}
+
+/* EXTRA LARGE DEVICES FORM 1200px TO 1920px */
+@media only screen and (min-width: 1200px){
+
+    /* HEADER CONFIGURATION */
+        .cabecalho{
+            height: 84vh;
+        }
+
+        .img-cabecalho{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+    /* ========================  */
+
+    /* MAIN CONFIGURATION */
+
+    /* CARDS FLUTUANTES */
+
+    .next-race img,
+    .next-race-photo img,
+    .next-final img,
+    .overlay{
+        height: 23vh;
+        width: 30vh;
+        z-index: 1;
+    }
+
+    .overlay{
+        height: 0;
+    }
+
+    .next-race:hover .overlay, 
+    .next-final:hover .overlay{
+        height: 100%;
+    }
+
+    .overlay footer{
+        height: 12vh;
+        font-size: 18px;
+        line-height: 35px;
+        padding: 23px;
+    }
+
+    .next-race, .next-race-photo{
+        position: absolute;
+        left: 56%;
+    }
+
+    .next-final{
+        position: absolute;
+    }
+
+    .next-race{
+        top: 57%;
+    }
+
+    .next-race-photo{
+        top: 82%;
+    }
+
+    .next-race-photo{
+        margin: 100px 0;
+    }
+
+    .next-race-photo hr{
+        position: absolute;
+        top: -3vh;
+        left: 0;
+        right: 0;
+        width: 166%;
+    }
+    /* FIM DOS CARDS FLUTUANTES */
+
+        /* BURN TO RACE */
+        .burn-to-race video{
+            height: 64vh;
+        }
+
+        .burn-final video{
+            height: 54vh;
+        }
+
+        /* ========================  */
+
+        .burn-to-race h3, .burn-to-race p{
+            margin: 5%;
+            position: relative;
+            top: 48%;
+            width: 69%;
+            font-size: 20px;
+        }
+
+        .burn-to-race hr{
+            position: absolute;
+            top: 46%;
+            border-color: white;
+            width: 89px;
+            left: 5%;
+        }
+
+        .the-flying-finn, .raikkonen{
+            flex-direction: row-reverse;
+            height: 55vh;
+        }
+
+        .the-flying-finn table{
+            font-size: 22px;
+            margin-top: 9vh;
+            position: relative;
+            left: 6%;
+        }
+
+        .raikkonen img{
+            height: 52vh;
+        }
+
+        .raikkonen hr{
+            position: absolute;
+            top: 33vh;
+            width: 46vh;
+            left: 0;
+        }
+
+        .kimi-raikkonen img{
+            width: 22vh;
+        }
+
+        .kimi-raikkonen p{
+            font-weight: 800;
+            font-size: 25px;
+            width: 41%;
+        }
+
+        .kimi-raikkonen hr{
+            width: 32vh;
+            position: absolute;
+            top: 6%;
+            left: 74.6%;
+        }
+
+        .kimi-raikkonen{
+            height: 18vh;
+            flex-direction: row;
+            padding: 3.5vh;
+            box-sizing: border-box;
+            margin: 3% 0;
+            position: relative;
+        }
+    /* ========================  */
+}
+
+/* EXTRA LARGE DEVICES FORM 1400px to 1920 */
+@media only screen and (min-width: 1400px){
+
+    /* HEADER CONFIGURATION */
+        .cabecalho{
+            height: 102vh;
+        }
+
+        .img-cabecalho{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+    /* ========================  */
+
+    /* MAIN CONFIGURATION */
+
+    .next-race img,
+    .next-race-photo img,
+    .next-final img,
+    .overlay{
+        height: 28vh;
+        width: 35vh;
+        z-index: 1;
+    }
+
+    .overlay{
+        height: 0;
+    }
+
+    .next-race:hover .overlay, 
+    .next-final:hover .overlay{
+        height: 100%;
+    }
+
+    .next-race, .next-race-photo{
+        position: absolute;
+        left: 60%;
+    }
+
+    .next-final{
+        position: absolute;
+    }
+
+    .next-race{
+        top: 68%;
+    }
+
+    .next-race-photo{
+        top: 100%;
+    }
+
+    .next-race-photo{
+        margin: 100px 0;
+    }
+
+    .next-race-photo hr{
+        position: absolute;
+        top: -3vh;
+        left: 0;
+        right: 0;
+        width: 150%;
+    }
+    /* FIM DOS CARDS FLUTUANTES */
+
+        /* BURN TO RACE */
+        .burn-to-race video{
+            height: 75vh;
+        }
+
+        .burn-final video{
+            height: 64vh;
+        }
+
+        .the-flying-finn, .raikkonen{
+            flex-direction: row-reverse;
+            height: 66vh;
+        }
+
+        .the-flying-finn .txt-finn{
+            font-size: 21px;
+            width: 53vh;
+            margin-top: 4vh;
+            padding: 10%;
+            box-sizing: border-box;
+        }
+
+        .the-flying-finn table{
+            font-size: 23px;
+            margin-top: 11vh;
+            position: relative;
+            left: 3%;
+        }
+
+        .raikkonen img{
+            height: 62vh;
+        }
+
+        .raikkonen hr{
+            position: absolute;
+            top: 41vh;
+            width: 56vh;
+            left: 0;
+        }
+
+        .kimi-raikkonen hr{
+            width: 38vh;
+            position: absolute;
+            top: 6%;
+            left: 74.6%;;
+        }
+
+        .burn-to-race h3, .burn-to-race p{
+            margin: 5%;
+            position: relative;
+            top: 48%;
+            width: 74%;
+            font-size: 22px;
+        }
+
+        .burn-to-race hr{
+            position: absolute;
+            top: 48%;
+            border-color: white;
+            width: 89px;
+            left: 5%;
+        }
+        /* ========================  */
+
+}
+
+/* EXTRA LARGE DEVICES FORM 1920px */
+@media only screen and (min-width: 1920px){
+
+    /* CONTAINER CONFIGURATION */
+        .container{ max-width: 1900px; }
+     /* ========================  */
+
+    /* HEADER CONFIGURATION */
+        .titulo-cabecalho h1{
+            font-size: 140px;
+            line-height: 140px;
+        }
+    /* ========================  */
+}
+
+
+
+.bg-red{background-color: red;}
+
+.bg-green{background-color: green;}
+
+.bg-blue{background-color: blue;}
