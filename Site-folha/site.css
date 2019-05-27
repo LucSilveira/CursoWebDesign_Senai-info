@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+/************************************************************************************************/
+.menu-uol{
+    background-color: black;
+}
+
+#menu-esquerda{
+    float: left;
+    position: relative;
+    left: 4%;
+    width: 35%;
+}
+
+#menu-direita{
+    position: relative;
+    left: 30%;
+    width: 58%;
+}
+
+#menu-esquerda,
+#menu-direita{
+    text-align: center;
+}
+
+#menu-esquerda li,
+#menu-direita li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+#menu-esquerda li a,
+#menu-direita li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-uol img{
+    height: 40px;
+    float: left;
+    position: relative;
+    left: 11%;
+    overflow: auto;
+}
+
+#menu-esquerda li a i,
+#menu-direita li a i{
+    letter-spacing: 10px;
+}
+
+/************************************************************************************************/
+
+.menu-folha{
+    height: 137px;
+}
+
+#menu-inferior-esquerda{
+    float: left;
+    position: absolute;
+    left: 7%;
+    top: 9%;
+}
+
+#menu-inferior-direita{
+    height: 131px;
+    position: absolute;
+    left: 80%;
+    top: 9%;
+}
+
+#menu-inferior-esquerda,
+#menu-inferior-direita{
+    text-align: center;
+}
+
+#menu-inferior-esquerda li,
+#menu-inferior-direita li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 8px;
+}
+
+#menu-inferior-esquerda #assine{
+    color: red;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#menu-inferior-esquerda li a,
+#menu-inferior-direita li a{
+    color: black;
+    text-decoration: none;
+}
+
+#menu-inferior-esquerda li a i,
+#menu-inferior-direita li a i{
+    letter-spacing: 10px;
+}
+
+.menu-folha img{
+    height: 150px;
+    float: left;
+    overflow: auto;
+    left: 37%;
+    position: absolute;
+}
+
+
+/************************************************************************************************/
+
+#logo-NYT{
+    width: 9%;
+    left: 7%;
+    position: relative;
+}
+
+
+.noticia-principal{
+    overflow: auto;
+    width: 86%;
+    height: 30%;
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+#img-principal{
+    width: 33%;
+    float: left;
+}
+
+#h1principal{
+    left: 2%;
+    position: relative;
+    width: 66%;
+    top: 25px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#newYork{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 2%;
+    top: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 82%;
+}
+
+#newYork a i{
+    letter-spacing: 10px;
+}
+
+#titleh1{
+    width: 63%;
+    top: 57px;
+    position: relative;
+    font-size: 125%;
+    left: 2%;
+    color: #848484;
+}
+
+#ph1{
+    position: relative;
+    left: 2%;
+    top: 73px;
+    width: 50%;
+    color: #5d5b5b;
+}
+
+.noticias-secundarias{
+    overflow: auto;
+    width: 86%;
+    height: 30%;
+    left: 7%;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#imgs-secundarias{
+    width: 28%;
+    float: left;
+}
+
+#h2secundarios {
+    left: 2%;
+    position: relative;
+    width: 69%;
+    top: 35px;
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#psecundarios{
+    width: 63%;
+    top: 75px;
+    position: relative;
+    font-size: 100%;
+    left: 2%;
+    color: #848484;
+}
+
+#p-inferior-secundarios{
+    position: relative;
+    left: 2%;
+    top: 115px;
+    width: 50%;
+    color: #848484;
+    font-size: 86%;
+}
+
+
+/***************************************************************************************************/
+
+.logo_inferior #logo_folha-secundaria{
+    width: 21%;
+    margin-top: 30px;
+    
+}
+
+.logo_inferior{
+    float: left;
+    width: 99%;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    margin-top: 45px;
+}
+
+#assinante{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 1%;
+    color: red;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.container-rodape 
+   .folha #sobre-folha li a,
+   .contatos #contatos-folha li a,
+   .editores #editoras-folha li a,
+   .comentarios #opinioes-folha li a,
+   .secoes #secoes-folha li a,
+   .servicos #servicos-folha li a,
+   .canais #canais-folha li a{
+        text-decoration: none;
+        color: #848484;
+        padding-top: 5px;
+}
+
+.container-rodape 
+   .folha #sobre-folha li,
+   .contatos #contatos-folha li,
+   .editores #editoras-folha li,
+   .comentarios #opinioes-folha li,
+   .secoes #secoes-folha li,
+   .servicos #servicos-folha li,
+   .canais #canais-folha li{
+        padding-top: 8px;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 14px;
+}
+
+.container-rodape
+    .lista1 .contatos{
+       margin-top: 54px; 
+}
+
+.container-rodape
+    .lista1 .contatos{
+       margin-top: 54px; 
+}
+
+.container-rodape
+    .lista4 .canais{
+       margin-top: 55px; 
+}
+
+.container-rodape
+    .lista3 .secoes{
+       margin-top: 55px; 
+}
+
+.container-rodape 
+   .folha #sobre-folha li #titulo,
+   .contatos #contatos-folha li #titulo,
+   .editores #editoras-folha li #titulo,
+   .comentarios #opinioes-folha li #titulo,
+   .secoes #secoes-folha li #titulo,
+   .servicos #servicos-folha li #titulo,
+   .canais #canais-folha li #titulo{
+    color: black;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.container-rodape .lista1, .lista2, .lista3{
+    float: left;
+    width: 18%;
+    margin-left: 1%;
+}

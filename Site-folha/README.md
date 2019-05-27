@@ -1,0 +1,1 @@
+Site desenvolvido em resolução de tela "	1988px - 1080px		"
